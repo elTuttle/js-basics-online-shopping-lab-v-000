@@ -103,10 +103,10 @@ function placeOrder(cardNumber) {
 
 
   if(cardNumber !== undefined){
-    console.log(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}`)
+    return console.log(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}`)
     cart = []
   }else{
-    console.log(`Sorry, we don't have a credit card on file for you.`)
+    return console.log(`Sorry, we don't have a credit card on file for you.`)
   }
 
 }
