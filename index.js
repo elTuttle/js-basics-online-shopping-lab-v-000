@@ -27,10 +27,6 @@ function viewCart() {
     response += "In your cart, you have"
     for(var i = 0; i < cartNumber.length; i++){
       var currentItem = cart[i]
-      var keyValue = 0
-      var min = Math.ceil(1);
-      var max = Math.floor(100);
-
       var keyString = Object.keys(currentItem)
 
       if(i === (cartNumber.length - 1) && cartNumber.length != 1){
@@ -101,7 +97,6 @@ function placeOrder(cardNumber) {
   console.log(cardNumber !== undefined)
   const cartTotal = total();
 
-
   if(cardNumber !== undefined){
     cart = []
     return console.log(`Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`)
@@ -110,12 +105,3 @@ function placeOrder(cardNumber) {
   }
 
 }
-
-addToCart("vanilla");
-addToCart("watermelon");
-addToCart("yams");
-console.log(cart)
-removeFromCart("yams")
-console.log(cart)
-placeOrder()
-console.log(cart)
