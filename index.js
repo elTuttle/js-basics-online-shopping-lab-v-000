@@ -117,5 +117,5 @@ addToCart("yams");
 console.log(cart)
 removeFromCart("yams")
 console.log(cart)
-placeOrder(97767898)
+placeOrder()
 console.log(cart)
